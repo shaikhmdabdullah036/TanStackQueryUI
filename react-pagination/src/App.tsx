@@ -18,8 +18,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="container">
         <div className="text-center mb-8">
-          <h1>User Directory</h1>
-          <p>Browse through our user list with smooth pagination</p>
+          <h1>Post Directory</h1>
+          <p>Browse through Post list with smooth pagination</p>
         </div>
 
         <div className="card">
@@ -27,7 +27,9 @@ function App() {
         </div>
 
         <div className="footer">
-          <p>Built with React, TypeScript, and React Query</p>
+          <p>
+            Built with React, TypeScript, and React Query by Mohammed Abdullah
+          </p>
         </div>
       </div>
 
