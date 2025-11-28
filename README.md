@@ -64,6 +64,52 @@ In the project directory, you can run:
 - `npm run build` - Builds the app for production
 - `npm run eject` - Ejects from Create React App
 
+# TanStack Query Pagination Examples
+
+This repository contains two implementations of pagination using TanStack Query (React Query):
+
+1. **React Web** - A web application with numbered pagination
+2. **React Native** - A mobile app with infinite scroll
+
+## API Endpoints
+
+### JSONPlaceholder API
+
+- **Base URL**: `https://jsonplaceholder.typicode.com`
+- **Posts Endpoint**: `/posts`
+  - **Query Params**:
+    - `_page`: Page number (starts at 1)
+    - `_limit`: Number of items per page (default: 10)
+
+## Pagination Logic
+
+### React Web (react-pagination)
+
+- **Type**: Client-side pagination with page numbers
+- **Features**:
+  - Shows page numbers with first/last navigation
+  - Pre-fetches next page for better UX
+  - Maintains scroll position
+  - Loading states and error handling
+
+```typescript
+// Example API call
+const fetchUsers = async (page: number) => {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`
+  );
+  return response.json();
+};
+```
+
+## React Native (ReactNativePagination)
+
+- **Type**: Infinite scroll with "Load More"
+- **Features**:
+  - Automatically loads more items when scrolling
+  - Virtualized list for performance
+  - Optimized for mobile touch
+
 ## Project Structure
 
 ```
