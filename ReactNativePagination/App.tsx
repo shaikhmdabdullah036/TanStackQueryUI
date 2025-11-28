@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { PostList } from './src/components/PostList';
+import { PostList } from './src/components/PostList/PostList';
 
 const queryClient = new QueryClient({
   defaultOptions: {

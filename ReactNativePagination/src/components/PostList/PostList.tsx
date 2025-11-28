@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, View, StyleSheet, Text } from 'react-native';
-import { PostCard } from './PostCard';
-import { usePosts, ITEMS_PER_PAGE } from '../hooks/usePosts';
+import { PostCard } from '../PostCard';
+import { usePosts } from '../../hooks/usePosts';
+import styles from './styles';
 
 export const PostList = () => {
   const {
@@ -67,31 +68,3 @@ export const PostList = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 8,
-  },
-  footerLoader: {
-    marginTop: 10,
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  loadingText: {
-    fontSize: 18,
-    color: '#666',
-  },
-  errorContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  errorText: {
-    color: 'red',
-    textAlign: 'center',
-  },
-});
