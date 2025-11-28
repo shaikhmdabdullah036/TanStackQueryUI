@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FlatList, View, StyleSheet, Text } from 'react-native';
+import { FlatList, View, Text } from 'react-native';
 import { PostCard } from '../PostCard';
 import { usePosts } from '../../hooks/usePosts';
 import styles from './styles';

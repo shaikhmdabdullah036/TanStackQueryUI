@@ -13,7 +13,7 @@ This project demonstrates pagination implementation using React Query for both w
 - Prefetching next page data
 - TypeScript support
 
-### React Native Version (Coming Soon)
+### React Native Version
 
 - Infinite scroll with FlatList
 - Pull-to-refresh
@@ -75,6 +75,27 @@ react-pagination/
   │   ├── types/          # TypeScript types
   │   ├── App.tsx         # Main App component
   │   └── index.tsx       # Application entry point
+  └── ...
+
+  ReactNativePagination/
+  ├── src/
+  │ ├── components/           # Reusable components
+  │ │ ├── PostCard/           # Post card component
+  │ │ │ ├── index.tsx
+  │ │ │ └── styles.ts
+  │ │ └── PostList/           # Post list component
+  │ │ ├── index.tsx
+  │ │ └── styles.ts
+  │ ├── hooks/                # Custom hooks
+  │ │ └── usePosts.ts         # Posts data fetching logic
+  │ ├── services/             # API services
+  │ │ └── api.ts              # API configuration
+  │ ├── types/                # TypeScript types
+  │ │ └── post.ts             # Post type definitions
+  │ ├── App.tsx               # Main App component
+  │ └── index.js              # Application entry point
+  └── android/                # Android native code
+  └── ios/                    # iOS native code
   └── ...
 ```
 
